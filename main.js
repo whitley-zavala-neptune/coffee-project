@@ -23,6 +23,7 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     var searchedName = nameSelection.value;
+    var searchResults = [];
 
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
@@ -31,11 +32,14 @@ function updateCoffees(e) {
         if (selectedRoast === "all"){
             filteredCoffees.push(coffee);
         }
-        // if (coffee.name.includes(searchedName)){
-        //     filteredCoffees.push(coffee);
-        // }
+
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
+
+    filteredCoffees.forEach(function (searchTerm){
+        if()
+    });
+
 }
 
 // document.setAttribute(coffees.name).style("text-weight", "bold")
