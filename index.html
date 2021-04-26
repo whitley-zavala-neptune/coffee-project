@@ -12,6 +12,7 @@
     <form>
         <label for="roast-selection"></label>
         <select id="roast-selection">
+            <option selected>all</option>
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
@@ -20,14 +21,14 @@
     </form>
 
     <table>
-        <thead>
+        <thead class="d-none">
             <tr>
                 <th>ID</th>
                 <th>NAME</th>
                 <th>ROAST</th>
             </tr>
         </thead>
-        <tbody class="d-flex row container justify-content-between" id="coffees"></tbody>
+        <tbody class="d-flex row container justify-content-start" id="coffees"></tbody>
     </table>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>

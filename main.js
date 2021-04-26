@@ -1,10 +1,10 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<div class="container coffee col-3 row">';
+    var html = '<div class="container d-flex coffee row col-5 ">';
     //html += '<div>' + coffee.id + '</div>';
-    html += '<div class="col-8">' + coffee.name + '</div>';
-    html += '<div class="col-4">' + coffee.roast + '</div>';
+    html += '<div class="" id="coffeeName">' + coffee.name + '</div>';
+    html += '<div class="" id="roastName">' + coffee.roast + '</div>';
     html += '</div>';
 
     return html;
@@ -26,9 +26,14 @@ function updateCoffees(e) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
+        if (selectedRoast === "all"){
+            filteredCoffees.push(coffee);
+        }
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
+
+// document.setAttribute(coffees.name).style("text-weight", "bold")
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
