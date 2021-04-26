@@ -60,7 +60,7 @@ var tbody = document.querySelector('#coffees');
 var roastSelection = document.querySelector('#roast-selection');
 var nameSelection = document.querySelector('#userInput');
 
-tbody.innerHTML = renderCoffees(coffees);
+tbody.innerHTML = renderCoffees(coffees.reverse());
 
 
 roastSelection.addEventListener('change', updateCoffees);
