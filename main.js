@@ -57,8 +57,6 @@ var coffees = [
 ];
 
 var tbody = document.querySelector('#coffees');
-// var submitButton = document.querySelector('#submit');
-// var searchButton = document.querySelector('#search');
 var roastSelection = document.querySelector('#roast-selection');
 var nameSelection = document.querySelector('#userInput');
 
