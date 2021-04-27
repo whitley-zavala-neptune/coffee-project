@@ -41,7 +41,24 @@
     </div>
 <!--Potential Side panel goes here-->
     <div class="col-3" style="border: red 1px solid">
-
+        <form>
+            <fieldset>
+                <legend>Add a coffee?</legend>
+                <div class="mb-3">
+                    <label for="newCoffeeName" class="form-label">Coffee Name</label>
+                    <input type="text" id="newCoffeeName" class="form-control" placeholder="Mocha">
+                </div>
+                <div class="mb-3">
+                    <label for="newRoastSelection" class="form-label">Roast selection</label>
+                    <select id="newRoastSelection" class="form-select">
+                        <option value='light'>Light</option>
+                        <option value='medium'>Medium</option>
+                        <option value='dark'>Dark</option>
+                    </select>
+                </div>
+                <button id="newCoffeeSubmit" type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
     </div>
 </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
