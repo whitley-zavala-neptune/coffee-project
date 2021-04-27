@@ -12,7 +12,19 @@ function renderCoffee(coffee) {
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
-        html += renderCoffee(coffees[i]);
+        if(coffees[i].roast === 'dark') {
+            html += renderCoffee(coffees[i]);
+        }
+    }
+    for(var i = coffees.length - 1; i >= 0; i--) {
+        if(coffees[i].roast === 'medium') {
+            html += renderCoffee(coffees[i]);
+        }
+    }
+    for(var i = coffees.length - 1; i >= 0; i--) {
+        if(coffees[i].roast === 'light') {
+            html += renderCoffee(coffees[i]);
+        }
     }
     return html;
 }
@@ -25,7 +37,6 @@ function addNewCoffee(){
     var newRoastName = newRoast.value;
 
     coffees.push({id:newId, name:newCoffee, roast: newRoastName},);
-    console.log(coffees);
 
 }
 
