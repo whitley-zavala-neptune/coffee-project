@@ -1,9 +1,11 @@
 header {
     background-image: linear-gradient( #533413
     , #341f04);
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     /*box-shadow: ;*/
-
+}
+body{
+    background-image: linear-gradient(#F6EEE0, #f6e7cc)
 }
 h1 {
     color: whitesmoke;
@@ -13,8 +15,8 @@ i {
     color: white;
 }
 
-#roast-selection{
-    margin-left: 4em;
+.extraPadding{
+    margin-left: 1em;
 }
 
 table {

@@ -11,17 +11,17 @@
     <h1 class="text-center"><i class="fab fa-java"></i>Coffee</h1>
 </header>
 <!--This is where filter and search bar lives-->
-<div class="container-fluid row" style="float: right">
+<div class="container-fluid extraPadding">
     <div class="row">
-        <form class="d-flex col-6">
+        <form class="d-flex col">
             <label for="roast-selection"></label>
-            <select id="roast-selection" class="form-control me-2" >
+            <select id="roast-selection" class="form-control me-2" style="width: 8rem">
                 <option selected>all</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <button class="btn btn-outline-secondary" id="submit" type="submit">Filter</button>
+            <button class="btn btn-outline-secondary" id="submit" type="submit"><i class="fas fa-filter btn-outline-secondary"></i></button>
         </form>
     </div>
     <div class="row" style="">
@@ -50,18 +50,20 @@
             <fieldset>
                 <legend>Add a coffee?</legend>
                 <div class="mb-3">
-                    <label for="newCoffeeName" class="form-label">Coffee Name</label>
+                    <label for="newCoffeeName" class="form-label"><h5>Coffee Name</h5></label>
                     <input type="text" id="newCoffeeName" class="form-control" placeholder="Mocha">
                 </div>
                 <div class="mb-3">
-                    <label for="newRoastSelection" class="form-label">Roast selection</label>
+                    <label for="newRoastSelection" class="form-label"><h5>Roast selection</h5></label>
                     <select id="newRoastSelection" class="form-select">
                         <option value='light'>Light</option>
                         <option value='medium'>Medium</option>
                         <option value='dark'>Dark</option>
                     </select>
                 </div>
-                <button id="newCoffeeSubmit" type="submit" class="btn btn-primary">Submit</button>
+                <div class="d-flex justify-content-end">
+                    <button id="newCoffeeSubmit" type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
             </fieldset>
         </form>
     </div>
