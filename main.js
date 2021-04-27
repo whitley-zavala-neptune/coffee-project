@@ -1,7 +1,7 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<div class="container d-flex coffee row col-4" id="boxes">';
+    var html = '<div class="container d-flex coffee row col-4 cards" id="boxes">';
     //html += '<div>' + coffee.id + '</div>';
     html += '<div class="" id="coffeeName">' + coffee.name + '</div>';
     html += '<div class="" id="roastName">' + coffee.roast + '</div>';
@@ -46,7 +46,6 @@ function updateCoffees(e) {
     var searchedName = nameSelection.value;
     var filteredCoffees = [];
 
-    var newObj = [{}]
 
     coffees.forEach(function(coffee) {
         if((coffee.name.toLowerCase()).includes(searchedName.toLowerCase()) &&  coffee.roast === selectedRoast){
@@ -58,17 +57,15 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 
-    //new coffee selection
-    // coffees.forEach(function (newCoffee){
-    //     if ((coffee.name.toLowerCase()) !== newCoffee.toLowerCase() && newCoffee !== ""){
-    //         newObj = [{name: newCoffee, roast: newRoastName}];
-    //         filteredCoffees.push(newObj);
-  //     }
-// });
-
 }
 
-// document.setAttribute(coffees.name).style("text-weight", "bold")
+document.querySelector('.darkmode').onclick = function () {
+    document.querySelector("body").style.background = '#191919';
+    document.querySelector("body").style.color = 'whitesmoke';
+    // document.querySelector("body").style.background = 'black';
+}
+
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [

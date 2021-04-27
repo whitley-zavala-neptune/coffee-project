@@ -22,6 +22,12 @@ h1 {
     color: whitesmoke;
 }
 
+#logo {
+    color: whitesmoke;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
 legend{
     border-bottom: solid 2px #7a543e;
 }
@@ -31,8 +37,8 @@ legend{
 }
 
 i {
-    padding-right: 5px;
-    color: white;
+    color: #D0B49F;
+    margin: 0 auto;
 }
 
 .extraPadding{
@@ -63,6 +69,8 @@ tbody {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
     border: none;
     margin: 10px;
+    /*color: whitesmoke;*/
+    /*background-color: black;*/
 }
 
 #coffeeName {
