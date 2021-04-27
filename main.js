@@ -24,6 +24,9 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var searchedName = nameSelection.value;
     var filteredCoffees = [];
+    var newCoffee = newName.value;
+    var newRoastName = newRoast.value;
+    var newObj = [{}]
 
     coffees.forEach(function(coffee) {
         if((coffee.name.toLowerCase()).includes(searchedName.toLowerCase()) &&  coffee.roast === selectedRoast){
@@ -36,8 +39,13 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 
     //new coffee selection
+        coffees.forEach(function (){
+            if ((coffee.name.toLowerCase()) !== newCoffee.toLowerCase() && newCoffee != ""){
+                newObj = [{name: newCoffee, roast: newRoastName}];
+                filteredCoffees.push(newObj);
+            }
+});
 
-}
 
 
 // document.setAttribute(coffees.name).style("text-weight", "bold")
@@ -73,5 +81,5 @@ tbody.innerHTML = renderCoffees(coffees); <!--.reverse() to flip the array so li
 roastSelection.addEventListener('change', updateCoffees);
 nameSelection.addEventListener('keyup', updateCoffees);
 //event listener for new coffee button
-// newCoffeeSubmit.addEventListener('click', updateCoffees);
+newCoffeeSubmit.addEventListener('click', updateCoffees);
 
