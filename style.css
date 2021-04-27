@@ -5,7 +5,13 @@ header {
     /*box-shadow: ;*/
 }
 body{
-    background-image: linear-gradient(#F6EEE0, #f6e7cc)
+    background-image: linear-gradient(#F6EEE0, #f6e7cc);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html{
+    height: 100%;
 }
 h1 {
     color: whitesmoke;
