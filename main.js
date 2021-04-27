@@ -39,11 +39,11 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 
     //new coffee selection
-        coffees.forEach(function (){
-            if ((coffee.name.toLowerCase()) !== newCoffee.toLowerCase() && newCoffee != ""){
-                newObj = [{name: newCoffee, roast: newRoastName}];
-                filteredCoffees.push(newObj);
-            }
+    coffees.forEach(function (newCoffee){
+        if ((coffee.name.toLowerCase()) !== newCoffee.toLowerCase() && newCoffee !== ""){
+            newObj = [{name: newCoffee, roast: newRoastName}];
+            filteredCoffees.push(newObj);
+        }
 });
 
 
