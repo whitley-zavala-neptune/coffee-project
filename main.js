@@ -68,8 +68,6 @@ function updateCoffees(e) {
 
 }
 
-
-
 // document.setAttribute(coffees.name).style("text-weight", "bold")
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
